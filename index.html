@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pedro Emmanuel · Desenvolvedor Backend</title>
+    <meta
+      name="description"
+      content="Portfolio de Pedro Emmanuel, estudante de Análise e Desenvolvimento de Sistemas com foco em desenvolvimento backend."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <canvas id="rainCanvas" class="rain-canvas" aria-hidden="true"></canvas>
+    <div class="ambient ambient-a"></div>
+    <div class="ambient ambient-b"></div>
+
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="#home" aria-label="Pedro Emmanuel">
+          <span class="brand-bracket">&lt;</span>Emmanuel<span class="brand-accent">.dev</span><span class="brand-bracket">/&gt;</span>
+        </a>
+
+        <nav class="nav" aria-label="Navegação principal">
+          <a href="#home" data-nav>Home</a>
+          <a href="#sobre" data-nav>Sobre mim</a>
+          <a href="#skills" data-nav>Skills</a>
+          <a href="#projetos" data-nav>Projetos</a>
+          <a href="#contato" data-nav>Contato</a>
+        </nav>
+
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main class="site-shell">
+      <section class="hero" id="home">
+        <div class="hero-copy" data-reveal="up">
+          <p class="hero-kicker">$ whoami</p>
+          <h1>Pedro<br />Emmanuel</h1>
+
+          <div class="hero-typer">
+            <span class="hero-typer-prefix">&gt;</span>
+            <span id="heroTyper" class="hero-typer-text"></span><span class="hero-cursor">_</span>
+          </div>
+
+          <div class="hero-socials">
+            <a href="https://linkedin.com/in/pedroemn" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://github.com/pedroemn" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </div>
+
+        <div class="hero-terminal" data-reveal="up">
+          <div class="terminal-window">
+            <div class="terminal-bar">
+              <span class="dot dot-r"></span>
+              <span class="dot dot-y"></span>
+              <span class="dot dot-g"></span>
+              <span class="terminal-title">pedro@backend:~</span>
+            </div>
+            <div class="terminal-body">
+              <p><span class="t-prompt">$</span> node status.js</p>
+              <p class="t-out">Carregando perfil<span class="t-dots"></span></p>
+              <p><span class="t-key">nome</span>: <span class="t-str">"Pedro Emmanuel"</span></p>
+              <p><span class="t-key">foco</span>: <span class="t-str">"Backend Development"</span></p>
+              <p><span class="t-key">stack</span>: [<span class="t-str">"Python"</span>, <span class="t-str">"JavaScript"</span>, <span class="t-str">"PostgreSQL"</span>]</p>
+              <p><span class="t-key">status</span>: <span class="t-ok">"online"</span> <span class="t-blink">●</span></p>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-side" data-reveal="left">
+          <div class="side-card">
+            <span class="side-label">Atualmente</span>
+            <strong>Estudante de Análise e Desenvolvimento de Sistemas</strong>
+            <p>Cursando o 1º período, focando por fora no desenvolvimento backend.</p>
+          </div>
+
+          <div class="side-card side-card-cta">
+            <span class="side-label">Contato rápido</span>
+            <a class="button button-primary" href="#contato">Vamos conversar</a>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section" id="sobre">
+        <div class="section-heading" data-reveal="up">
+          <span class="eyebrow">// sobre mim</span>
+          <h2>Venha me conhecer um pouco mais.</h2>
+        </div>
+
+        <div class="about-grid">
+          <article class="about-card about-card-text" data-reveal="up">
+            <p>
+              Me chamo Pedro Emmanuel, tenho 18 anos e seja bem-vindo ao meu portfólio. Há 1 ano tive meu primeiro
+              contato com a programação e desde então vivo em constante prática e estudo, buscando a cada dia
+              aprender mais. Desde muito novo gostei de tecnologia, jogos e computadores, e a programação se
+              encaixou perfeitamente nesse universo que me fascina. Além disso, sempre fui uma pessoa muito
+              extrovertida e comunicativa devido à minha prática constante de esportes coletivos, o que me ajuda a
+              ter facilidade para trabalhar em equipe e me comunicar de forma clara e objetiva, além de me adaptar a
+              diferentes ambientes e pessoas. Fora do teclado, sou flamenguista roubado e raiz — o Mengão também
+              entra na lista das minhas paixões.
+            </p>
+            <p>
+              Curso Análise e Desenvolvimento de Sistemas na Universidade Tiradentes e me encontro no 1º período,
+              onde estou me aprofundando cada vez mais no universo do desenvolvimento de software. Mesmo cursando
+              nível superior, busco complementar minha formação acadêmica e por isso curso Python na plataforma
+              Udemy, onde já adquiri uma base relevante na linguagem e sigo me aprofundando cada vez mais. Além de
+              Python, tenho conhecimento em JavaScript, HTML5, CSS3 e PostgreSQL, o que me permite ter uma visão
+              ampla do desenvolvimento de software e me ajuda a entender melhor as necessidades dos projetos em que
+              trabalho. Busco ser um ótimo desenvolvedor backend através do conhecimento.
+            </p>
+          </article>
+
+          <div class="about-side" data-reveal="left">
+            <div class="code-block" id="aboutCodeBlock">
+              <div class="terminal-bar terminal-bar-mini">
+                <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+                <span class="terminal-title">pedro.js</span>
+              </div>
+              <pre class="code-lines"><span class="code-line" data-line="0"><span class="c-kw">const</span> pedro = {</span><span class="code-line" data-line="1">  idade: <span class="c-num" data-count="18">0</span>,</span><span class="code-line" data-line="2">  curso: <span class="c-str">"ADS — Universidade Tiradentes"</span>,</span><span class="code-line" data-line="3">  periodo: <span class="c-str">"1º semestre"</span>,</span><span class="code-line" data-line="4">  foco: <span class="c-str">"Backend"</span>,</span><span class="code-line" data-line="5">  base: <span class="c-str">"Udemy + prática"</span>,</span><span class="code-line" data-line="6">  time_do_coracao: <span class="c-str">"Flamengo"</span>,</span><span class="code-line" data-line="7">  aprendendo: <span class="c-bool">true</span>,</span><span class="code-line" data-line="8">};<span class="hero-cursor code-cursor">_</span></span></pre>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="section-heading" data-reveal="up">
+          <span class="eyebrow">// stack</span>
+          <h2>Seja muito bem-vindo ao meu mundo na programação.</h2>
+        </div>
+
+        <div class="skills-cloud" id="skillsCloud" data-reveal="up">
+          <article class="skill-pod" style="--pod-delay: 0s">
+            <span class="skill-icon"><i class="devicon-python-plain colored" aria-hidden="true"></i></span>
+            <strong>Python</strong>
+          </article>
+          <article class="skill-pod" style="--pod-delay: 0.08s">
+            <span class="skill-icon"><i class="devicon-javascript-plain colored" aria-hidden="true"></i></span>
+            <strong>JavaScript</strong>
+          </article>
+          <article class="skill-pod" style="--pod-delay: 0.16s">
+            <span class="skill-icon"><i class="devicon-html5-plain colored" aria-hidden="true"></i></span>
+            <strong>HTML 5</strong>
+          </article>
+          <article class="skill-pod" style="--pod-delay: 0.24s">
+            <span class="skill-icon"><i class="devicon-css3-plain colored" aria-hidden="true"></i></span>
+            <strong>CSS 3</strong>
+          </article>
+          <article class="skill-pod" style="--pod-delay: 0.32s">
+            <span class="skill-icon"><i class="devicon-postgresql-plain colored" aria-hidden="true"></i></span>
+            <strong>PostgreSQL</strong>
+          </article>
+          <article class="skill-pod" style="--pod-delay: 0.4s">
+            <span class="skill-icon"><i class="devicon-java-plain colored" aria-hidden="true"></i></span>
+            <strong>Java</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="projetos">
+        <div class="section-heading" data-reveal="up">
+          <span class="eyebrow">// projetos</span>
+          <h2>Aqui você encontra um pouco do meu trabalho, espero que goste.</h2>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+          <article class="project-card project-card-empty" data-reveal="up">
+            <div class="project-card-glow" aria-hidden="true"></div>
+            <span class="project-tag">$ git log --oneline</span>
+            <h3>Novos projetos a caminho</h3>
+            <p>Estou construindo meus primeiros projetos backend em público. Em breve eles aparecem por aqui.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="contato">
+        <div class="section-heading" data-reveal="up">
+          <span class="eyebrow">// contato</span>
+          <h2>Aqui podemos ter um contato direto, vamos realizar esse network.</h2>
+        </div>
+
+        <div class="contact-grid">
+          <a class="contact-card" href="https://github.com/pedroemn" target="_blank" rel="noreferrer" data-reveal="up">
+            <span class="contact-ping" aria-hidden="true"></span>
+            <span class="contact-tag">GitHub</span>
+            <strong>github.com/pedroemn</strong>
+          </a>
+          <a class="contact-card" href="https://linkedin.com/in/pedroemn" target="_blank" rel="noreferrer" data-reveal="up">
+            <span class="contact-ping" aria-hidden="true"></span>
+            <span class="contact-tag">LinkedIn</span>
+            <strong>linkedin.com/in/pedroemn</strong>
+          </a>
+          <a class="contact-card" href="https://www.instagram.com/pedro.emn/" target="_blank" rel="noreferrer" data-reveal="up">
+            <span class="contact-ping" aria-hidden="true"></span>
+            <span class="contact-tag">Instagram</span>
+            <strong>@pedro.emn</strong>
+          </a>
+          <a class="contact-card" href="mailto:pomansir@gmail.com" data-reveal="up">
+            <span class="contact-ping" aria-hidden="true"></span>
+            <span class="contact-tag">Email</span>
+            <strong>pomansir@gmail.com</strong>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&lt;/&gt; <span id="year"></span> · pomansir@gmail.com</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
