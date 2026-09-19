@@ -2,10 +2,11 @@
    Tokens
    ========================================================================== */
 :root {
-  --bg: #0a1628;
-  --bg-alt: #0d1c33;
-  --surface: #10233f;
-  --surface-2: #142a4b;
+  --bg: #04070d;
+  --bg-blue: #0c1f3d;
+  --bg-alt: #0a1526;
+  --surface: #0d1a30;
+  --surface-2: #112238;
   --border: rgba(255, 255, 255, 0.09);
   --border-strong: rgba(255, 255, 255, 0.16);
   --text: #eef2f8;
@@ -36,7 +37,7 @@ html {
 
 body {
   margin: 0;
-  background: var(--bg);
+  background: radial-gradient(120% 100% at 50% -10%, var(--bg-blue) 0%, var(--bg) 55%, #010203 100%) fixed;
   color: var(--text);
   font-family: var(--body-font);
   line-height: 1.6;
@@ -73,7 +74,7 @@ ul {
 
 ::selection {
   background: var(--blue);
-  color: #0a1628;
+  color: #04070d;
 }
 
 /* ==========================================================================
@@ -127,7 +128,7 @@ ul {
 
 .button-primary {
   background: linear-gradient(135deg, var(--blue), var(--blue-deep));
-  color: #0a1628;
+  color: #04070d;
   border-color: transparent;
   box-shadow: 0 0 0 rgba(47, 141, 255, 0);
 }
@@ -166,7 +167,7 @@ ul {
   top: 0;
   z-index: 50;
   backdrop-filter: blur(14px);
-  background: rgba(10, 22, 40, 0.72);
+  background: rgba(4, 7, 13, 0.7);
   border-bottom: 1px solid var(--border);
 }
 
@@ -184,10 +185,13 @@ ul {
   font-size: 17px;
   font-weight: 500;
   color: var(--text);
+  letter-spacing: -0.01em;
 }
 
-.brand-bracket {
+.brand-prompt {
   color: var(--blue);
+  font-weight: 700;
+  margin-right: 2px;
 }
 
 .brand-accent {
