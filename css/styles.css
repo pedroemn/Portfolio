@@ -671,6 +671,30 @@ ul {
   font-size: 14.5px;
 }
 
+.project-link {
+  display: inline-block;
+  margin-top: 16px;
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--blue-bright);
+  transition: color 0.2s var(--ease);
+}
+
+.project-link:hover {
+  color: var(--text);
+}
+
+.projects-empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 48px 24px;
+  border: 1px dashed var(--border-strong);
+  border-radius: var(--radius);
+  color: var(--text-dim);
+  font-family: var(--mono);
+  font-size: 15px;
+}
+
 /* ==========================================================================
    Contato
    ========================================================================== */

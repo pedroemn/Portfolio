@@ -1,9 +1,29 @@
-(() => {
+(async () => {
   "use strict";
 
   const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   document.getElementById("year").textContent = new Date().getFullYear();
+
+  /* ------------------------------------------------------------------ */
+  /* Projetos: carregados de projetos/projetos.html                      */
+  /* Basta colar um novo <article class="project-card"> nesse arquivo    */
+  /* que ele aparece aqui automaticamente, sem editar mais nada.         */
+  /* ------------------------------------------------------------------ */
+  const projectsGrid = document.getElementById("projectsGrid");
+
+  if (projectsGrid) {
+    try {
+      const response = await fetch("./projetos/projetos.html", { cache: "no-store" });
+      const raw = await response.text();
+      const html = raw.replace(/<!--[\s\S]*?-->/g, "").trim();
+      projectsGrid.innerHTML = /<article\b/i.test(html)
+        ? html
+        : '<p class="projects-empty">Em breve.</p>';
+    } catch (error) {
+      projectsGrid.innerHTML = '<p class="projects-empty">Em breve.</p>';
+    }
+  }
 
   /* ------------------------------------------------------------------ */
   /* Mobile nav                                                          */
